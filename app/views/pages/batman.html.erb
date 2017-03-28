@@ -1,4 +1,12 @@
 <h1>I'm batman</h1>
+<form action="<%= pages_save_votosbatman_url %>" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  Email<input type="string" name="email" value=""><br>
+  Usuario<input type="string" name="usuario" value=""><br>
+  <input type="submit" name="" value="Votar">
+</form>
+
+
 <script type="text/javascript">
    $.backstretch("http://www.nerdgasmo.com/wp-content/uploads/2012/08/Bat07.jpg");
 </script>
