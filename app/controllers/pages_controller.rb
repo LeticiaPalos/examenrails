@@ -23,7 +23,7 @@ class PagesController < ApplicationController
     @email = params[:email]
 
     unless params[:email].blank?
-      @user = Votosuperans.new(usuario: @user,email: @email)
+      @user = Votosuperan.new(usuario: @user,email: @email)
       @user.save
       redirect_to pages_superman_path, notice: "El usuario se creo correctamente"
     end
